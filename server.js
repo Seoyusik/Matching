@@ -1,9 +1,12 @@
 var express = require('express');
+//var morgan = require('morgan')
 
 var app = express();
+
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
+//app.use(morgan('dev'));
 app.get('/', function(req, res) {
   res.sendFile(__dirname + '/client.html');
 });

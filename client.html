@@ -56,8 +56,8 @@
       });
 
       socket.on('change name', function(name){
-        $('#chatLog').val('');
-        $('#chatLog').scrollTop($('#chatLog')[0].scrollHeight);
+        // $('#chatLog').val('');
+        // $('#chatLog').scrollTop($('#chatLog')[0].scrollHeight);
         $('#name').val(name);
         socket.emit('auth', 'auth test', myRank);
         socket.emit('join', 'join test', myRank); //test를 위해 버튼클릭없이 바로 emit하게 함

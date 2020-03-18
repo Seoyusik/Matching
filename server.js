@@ -11,6 +11,8 @@ app.get('/', function(req, res) {
   res.sendFile(__dirname + '/client.html');
 });
 
+
+
 var matching = []; //매칭대기중인 소캣정보 저장
 var count = 0;//user count
 var matchingCount=0;//matching Count
